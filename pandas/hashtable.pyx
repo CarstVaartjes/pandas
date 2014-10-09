@@ -447,7 +447,7 @@ cdef class Int64HashTable: #(HashTable):
 
         return locs
 
-    def factorize(self, ndarray[object] values):
+    def factorize(self, ndarray[int64_t] values):
         reverse = {}
         labels = self.get_labels(values, reverse, 0)
         return reverse, labels
